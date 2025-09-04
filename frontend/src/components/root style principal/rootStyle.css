@@ -1,5 +1,8 @@
-
+/* ici je declare mes styles */
 :root{
-    --colback:rgb(66, 148, 183);
+    --colorback:rgb(66, 148, 183);
+    --color-des-barre: rgb(246, 242, 242);
+    --hauteur-general: 16vh;
+    --display-parent: flex;
 }
 

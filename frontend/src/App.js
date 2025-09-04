@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './components/header/header';
+import { NavBar } from './components/navbar/navbar';
 
 function App() {
   return (
     <BrowserRouter>
+    <NavBar />
     <Routes>
-      <Route path='/' element={<Header/>} />
+      {/* <Route path='/' element={<Header/>} /> */}
     </Routes>
     </BrowserRouter>
   );
