@@ -4,10 +4,17 @@ import { Logo } from "../logo/logo"
 import Link from 'react'
 // 
 import '../style css/navbar.css'
+// 
+
+
 
 // ma barre de navigation
 export const NavBar=()=>{
+    
+    
+
     return (
+       
         <div className="vue" style={{
            height:'var( --hauteur-general)',
            backgroundColor:'var(--color-des-barre)',
@@ -16,6 +23,10 @@ export const NavBar=()=>{
             <Logo/>
             <BarreRecherche/>
             {/* <Link to='/acceuil' element='acceuil' >e</Link> */}
-        </div>
+        </div> 
+        
     )
+    
 }
+
+
