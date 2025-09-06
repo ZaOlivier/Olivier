@@ -2,21 +2,28 @@
 const express=require('express')
 // instance de notre serveur(application)
 const app=express();
-// permet de servir les fichiers statiques
-const path= require('path')
 // 
-const userRoute=require('./route/userRoute')
+const router=require('./route/userRoute')
 
 
-// pour servir tout nos dossier static dans db local
-app.use('/db', express.static(path.join(__dirname, 'db-local')))
+// on importe mongoose pour pouvoir se connecter et interragie avec mongo altas
+const mongoose = require('mongoose');
+
+// pour la connexion de mam db mongo
+mongoose.connect("mongodb+srv://zaouliolivier01:Tahdolce1@cluster0.wosgqqy.mongodb.net/commerce?retryWrites=true&w=majority")
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// })
+.then(() => console.log('Connecté à MongoDB Atlas'))
+.catch(err => console.error('Erreur de connexion à MongoDB Atlas :', err));
+
 
 
 // permet de lire le fichiers json reçu
 app.use(express.json());
 
 // les route ou encore les API qui vont nous permettre de faire des requetes via frontend
-app.use('/api', userRoute)
+app.use('/api', router)
 
 // on export l'app
 module.exports=app;
