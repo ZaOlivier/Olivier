@@ -4,8 +4,13 @@ const express=require('express')
 const app=express();
 // 
 const router=require('./route/userRoute')
+// 
+const cors = require('cors');
 
 
+
+// 
+app.use(cors());
 // on importe mongoose pour pouvoir se connecter et interragie avec mongo altas
 const mongoose = require('mongoose');
 
