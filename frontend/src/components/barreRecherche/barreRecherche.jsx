@@ -1,6 +1,8 @@
 
 // importons usestate
 import { useState } from "react"
+// 
+import'../style css/barrerecherche.css';
 
 // c'est ma barre de recherche
 export const BarreRecherche = ()=>{
@@ -22,29 +24,21 @@ export const BarreRecherche = ()=>{
         <>
             {/* le formulaire lui meme */}
 
-            <form onSubmit={Connexion} >
+            <form onSubmit={Connexion} className="barrerecher">
                 {/* les input permet la saisir */}
-                <input type="text"
+                <input type="search"
                     value={nom}
-                    placeholder="votre nom"
+                    placeholder="recherche d'autres produits"
                     onChange={(e)=>
                         setNom(e.target.value)
                     }
                     required
                 />
-                <input type="number" 
-                    value={numero}
-                    placeholder="votre numero"
-                    // pour capter les donnees saisirs
-                    // e.target.value permet de recuperer les donnes saisirs
-                    onChange={(e)=>
-                        setNumero(e.target.value)
-                    }
-                    required
-                />
-                <button type="submit">valider</button>
+               
+                <button type="submit">recherche</button>
 
             </form>
+            
            
         </>
     )

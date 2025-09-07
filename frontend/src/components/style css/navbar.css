@@ -1,5 +1,9 @@
 
-/* .vue{
-    background-color: var(--color-des-barre);
-    
-} */
+.navbarCss{
+    background-color: var(--back-navbar);
+    display: var(--display-block);
+    border: var(--border-parent);
+    /* padding: var(--paddin-navbar); */
+    width: 99%;
+    position: fixed;
+ } 

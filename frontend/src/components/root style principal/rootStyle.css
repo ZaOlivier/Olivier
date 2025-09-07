@@ -1,8 +1,19 @@
 /* ici je declare mes styles */
 :root{
-    --colorback:rgb(66, 148, 183);
-    --color-des-barre: rgb(246, 242, 242);
-    --hauteur-general: 16vh;
-    --display-parent: flex;
+    --border-body:3px, solid rgb(0, 0, 0);
+    --border-parent:2px, solid red;
+    --border-enfant1:2px, solid green;
+    --border-form: 1px solid rgb(167, 167, 167);
+    --back:rgb(63, 199, 241);
+    --back1:rgb(255, 218, 55);
+    --back-navbar: rgb(255, 255, 255);
+    --back-footer: black;
+    --color-footer:white;
+    --display-flex: flex;
+    --display-block: block;
+    --hauteur-body:100vh;
+    --largeur-body:100vw;
+    --size-body:2em;
+    
 }
 

@@ -2,9 +2,9 @@
 const express=require('express')
 // instance de notre serveur(application)
 const app=express();
-// 
-const router=require('./route/userRoute')
-// 
+// importe la route des Users
+const Users=require('./route/userRoute')
+// pour eviter les histoire de cors
 const cors = require('cors');
 
 
@@ -28,7 +28,7 @@ mongoose.connect("mongodb+srv://zaouliolivier01:Tahdolce1@cluster0.wosgqqy.mongo
 app.use(express.json());
 
 // les route ou encore les API qui vont nous permettre de faire des requetes via frontend
-app.use('/api', router)
+app.use('/api', Users)
 
 // on export l'app
 module.exports=app;

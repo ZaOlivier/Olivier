@@ -1,12 +1,10 @@
 import { BarreRecherche } from "../barreRecherche/barreRecherche"
 import { Logo } from "../logo/logo"
 // on import Link pour pouvoir naviguer entre les pages
-import Link from 'react'
-// 
+import {Link} from 'react-router-dom'
+// style
 import '../style css/navbar.css'
-import{ Inscription} from "../connexion&insci/inscription"
-import { Connexion } from "../connexion&insci/connexion"
-// 
+
 
 
 
@@ -17,19 +15,12 @@ export const NavBar=()=>{
 
     return (
        <>
-        <div className="vue" style={{
-           height:'var( --hauteur-general)',
-           backgroundColor:'var(--color-des-barre)',
-           display:'var(--display-parent)'
-        }}>
+        <div className="navbarCss">
             <Logo/>
             <BarreRecherche/>
-            
-            {/* <Link to='/acceuil' element='acceuil' >e</Link> */}
+        
         </div> 
-        <Inscription/>
-        <br /><br /><br /><br />
-        <Connexion/>
+        
         </>
         
     )
