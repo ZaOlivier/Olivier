@@ -1,0 +1,127 @@
+.Navig{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+
+    /* border: 2px solid red; */
+    /* retirer apres plusieurs ajouts d'element dans la nav */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: white;
+    /* padding-right: 20px; */
+    /* border-radius: 0px; */
+    /* margin-left: 60px; */
+    /* margin-right: 40px; */
+    /* padding-bottom: 4px; */
+    /* padding-top: 8px; */
+    /* min-width: 98.2vw; */
+    /* margin-top: 0; */
+    /* margin-bottom: 100px; */
+    width:100dvw;
+    /* max-width: max-content; */
+    position: fixed;
+    z-index: 8px;
+    top: 0px;
+    padding:8px 10px;
+    gap: 10px;
+    /* margin: 6px; */
+    /* transition: 400m; */
+}
+
+.logonavigserv{
+    /* border: 2px solid green; */
+    display: flex;
+    /* padding: 4px 0 0 0; */
+    /* gap:10px; */
+    /* justify-content: center; */
+
+}
+
+.ecriturepanier{
+    visibility: hidden;
+    display: none
+}
+
+.burger{
+    /* border: 2px solid black; */
+    width: 10dvw;
+    margin-right: 10px;
+    margin-left:10px
+}
+
+.Navig h2{
+    /* border: 2px solid rgb(25, 0, 255); */
+    width: fit-content;
+    /* margin-left: 20px; */
+    /* height: 50%; */
+    /* width: 20dvw; */
+    margin-right: 60px;
+    /* margin-left:20px; */
+    /* padding: 0 4px; */
+    /* max-width: max-content, */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+}
+.NavigServ{
+    display: flex;
+    max-height: 10dvw;
+    /* border: 2px solid rgb(255, 0, 200); */
+    /* padding: 0 0 0 8px; */
+    /* display: flex; */
+    /* margin: 0 10px; */
+    /* width: 40dvw; */
+    /* margin-right: 40px; */
+    gap:20px;
+}
+
+.NavigServ a {
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* display: flex; */
+    /* align-items: center; */
+    /* font-size: 0.80em; */
+    /* color: rgb(255, 255, 255); */
+    /* margin-left: 20px; */
+    /* margin: 0 15px; */
+    text-decoration: none;
+    /* border-radius: 6px; */
+    /* text-overflow: unset; */
+    /* visibility: hidden; */
+    /* height: 10vh; */
+   
+}
+.Navpanier a{
+   visibility: visible; 
+}
+
+/* .NavigServ a:hover{
+    border: 1px solid rgb(90, 168, 0);
+    background-color: bisque;
+    
+} */
+
+/* .NavigServ .iconserv{
+    border: 2px solid red;
+    margin-right: 5px;
+} */
+
+.Navig .NombrePanier{
+    border: 1px solid rgb(255, 0, 0);
+    text-align: center;
+    border-radius: 90%;
+    height: 18px;
+    width: 18px;
+    padding-bottom: 8x;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    font-size: 14px;
+    top: 3px;
+    right: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    /* visibility: hidden; */
+} 
+
+
+
+
+

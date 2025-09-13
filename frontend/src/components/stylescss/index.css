@@ -1,22 +1,22 @@
-body {
+/* body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   /* -webkit-font-smoothing: antialiased; */
   /* -moz-osx-font-smoothing: grayscale; */
   /* background-color:var(--back); */
-  border: var(--border-body);
-  max-height: var(--hauteur-body);
+  /* border: var(--border-body);
+  min-height: var(--hauteur-body);
   width: var(--largeur-body);
-  font-size: var(--size-body);
-}
+  font-size: var(--size-body); */
+/* } */
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
 
-*{
+/* *{
   margin: 0;
   padding: 0;
-}
+} */

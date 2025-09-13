@@ -1,0 +1,48 @@
+
+.re{
+    display: grid;
+    /* background-color: rgb(255, 255, 255); */
+    height: fit-content;
+    max-width: 30vw;
+    margin-left: 20px;
+    /* position: relative; */
+    /* position: fixed; */
+    /* top: 102px; */
+    /* display: flex; */
+    /* bottom: 200px; */
+    /* left: 7000px; */
+    border-radius: 4px;
+    /* margin-bottom: 100px; */
+    /* margin-right: 68.094px; */
+    /* margin-top: 30px; */
+    /* margin-bottom: 20px; */
+    /* margin: 100px 0; */
+    /* margin-left: 15px; */
+    
+    border: 1px solid red;
+}
+
+
+
+/* .infoart{
+
+} */
+
+.rienAUpanier{
+    text-align: center;
+    padding : 30px;
+}
+.articleAuPanier{
+    padding: 30px;
+}
+.articleAuPanier button{
+    align-items: center;
+    margin-left: 125px;
+    margin-top: 95px;
+    min-width: 8vw;
+    height: 24px;
+}
+
+.articleAuPanier a{
+    text-decoration: none;
+}

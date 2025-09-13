@@ -1,11 +1,54 @@
-import '../style css/footer.css'
+import React from "react";
+import '../stylescss/footer.css'
 
-export const Footer=()=>{
+export const MyFooter=()=>{
+
     return(
-        <div className="footer">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam labore facere delectus tenetur eum tempora odit 
-            numquam asperiores maxime minus maiores corrupti reprehenderit molestiae velit ratione, 
-            perferendis culpa, deserunt officia?</p>
-        </div>
+
+        <footer>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+            expedita in aspernatur incidunt quam, sed placeat nemo, 
+            debitis veritatis ut consequuntur. Dolorem doloremque cumque 
+            provident enim nihil harum! Reiciendis, facere.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+            {/* expedita in aspernatur incidunt quam, sed placeat nemo, 
+            debitis veritatis ut consequuntur. Dolorem doloremque cumque provident 
+            enim nihil harum! Reiciendis, facere.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+            expedita in aspernatur incidunt quam, sed placeat nemo, 
+            debitis veritatis ut consequuntur. Dolorem doloremque cumque 
+            provident enim nihil harum! Reiciendis, facere.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+            expedita in aspernatur incidunt quam, sed placeat nemo, 
+            debitis veritatis ut consequuntur. Dolorem doloremque cumque 
+            provident enim nihil harum! Reiciendis, facere.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+            expedita in aspernatur incidunt quam, sed placeat nemo, 
+            debitis veritatis ut consequuntur. Dolorem doloremque cumque provident 
+            enim nihil harum! Reiciendis, facere.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+            expedita in aspernatur incidunt quam, sed placeat nemo, 
+            debitis veritatis ut consequuntur. Dolorem doloremque cumque 
+            provident enim nihil harum! Reiciendis, facere.
+            enim nihil harum! Reiciendis, facere.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+            expedita in aspernatur incidunt quam, sed placeat nemo, 
+            debitis veritatis ut consequuntur. Dolorem doloremque cumque 
+            provident enim nihil harum! Reiciendis, facere.
+            enim nihil harum! Reiciendis, facere. */}
+            {/* <div className="ft">
+            enim nihil harum! Reiciendis, facere.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+            expedita in aspernatur incidunt quam, sed placeat nemo, 
+            debitis veritatis ut consequuntur. Dolorem doloremque cumque 
+            provident enim nihil harum! Reiciendis, facere.
+            enim nihil harum! Reiciendis, facere.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+            expedita in aspernatur incidunt quam, sed placeat nemo, 
+            debitis veritatis ut consequuntur. Dolorem doloremque cumque 
+            provident enim nihil harum! Reiciendis, facere.
+            </div>  */}
+        </footer>
+        
     )
 }

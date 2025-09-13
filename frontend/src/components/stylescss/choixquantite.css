@@ -1,0 +1,22 @@
+
+.nombreqte{
+    /* border: 1px solid red; */
+    display:flex;
+    justify-content: center;
+    width: 8vw;
+    height: 3vh;
+    /* border: 1px solid orange; */
+
+    
+    
+}
+
+.nombreqte button{
+    width: 40%;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: orange;
+    color: white;
+}

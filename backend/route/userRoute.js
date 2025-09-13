@@ -12,7 +12,7 @@ router.get('/users', async (req, res)=>{
         const users= await User.find();
         res.json(users)
     }catch(err){
-        res.json(Error)('dommage')
+        res.json(Error)('noo')
     }
 });
 

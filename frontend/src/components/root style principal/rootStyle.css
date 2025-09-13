@@ -1,6 +1,7 @@
 /* ici je declare mes styles */
+
 :root{
-    --border-body:3px, solid rgb(0, 0, 0);
+    --border-body:3px, solid rgb(0, 113, 38);
     --border-parent:2px, solid red;
     --border-enfant1:2px, solid green;
     --border-form: 1px solid rgb(167, 167, 167);
@@ -11,7 +12,7 @@
     --color-footer:white;
     --display-flex: flex;
     --display-block: block;
-    --hauteur-body:100vh;
+    --hauteur-body:50vh;
     --largeur-body:100vw;
     --size-body:2em;
     
