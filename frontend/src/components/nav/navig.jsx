@@ -25,20 +25,20 @@ const Navbar=()=>{
                     <div className="burger">
                        <AlignLeft />
                     </div>
-                <div>
-                    <h2>KCAnRF</h2>
-                </div>
-                
-                <div className='NavigServ'>
-                    <AppelServices />
-                    <div className="Navpanier">
-                        <Link to='/Affichpanier' ><ShoppingCart className='iconserv' color='black' size={28}/>
-                        <span className='ecriturepanier'>Panier  </span>
-                        <span className='NombrePanier'>{QteTotalPanier}</span></Link>
-                       
-                       
+                    <div>
+                        <h2>KCAnRF</h2>
                     </div>
-                </div>
+                
+                    <div className='NavigServ'>
+                        <AppelServices />
+                        <div className="Navpanier">
+                            <Link to='/Affichpanier' ><ShoppingCart className='iconserv' color='black' size={28}/>
+                            <span className='ecriturepanier'>Panier  </span>
+                            <span className='NombrePanier'>{QteTotalPanier}</span></Link>
+                       
+                       
+                        </div>
+                    </div>
                 </div>
                 <BarreRecherche />
             </div>

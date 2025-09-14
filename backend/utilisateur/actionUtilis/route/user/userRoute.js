@@ -3,7 +3,7 @@ const express = require('express')
 // nous permet de cree des routes
 const router = express.Router();
 // importation du modele user(collection)
-const User=require('../modeleRoute/userModele');
+const User=require('../../../utilisModel/userModele');
 
 
 // requette get pour afficher les utilisateurs
@@ -12,7 +12,7 @@ router.get('/users', async (req, res)=>{
         const users= await User.find();
         res.json(users)
     }catch(err){
-        res.json(Error)('noo')
+        res.json(Error)
     }
 });
 

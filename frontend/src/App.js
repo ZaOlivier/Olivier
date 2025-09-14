@@ -9,6 +9,7 @@ import AffichPanier from './pages/affichpanier';
 import AjouterAuPanierProvider from './components/ajoutPanier/ajouteraupanierProvider';
 import ChoisirQteProvider from './components/choixquantite/qtechoix';
 import './components/root style principal/rootStyle.css'
+import {AdmAcceuil} from './DashbordAdmi/pageadm/acceuiladm'
 
 
 function App(){
@@ -22,6 +23,7 @@ function App(){
                     <Route path='/APropos' element={<APropos />} />
                     <Route path='/AffichPanier' element={<AffichPanier />} />
                     <Route path='/Commande' element={<Commande />} />
+                    <Route path='/AdmAcceuil' element={<AdmAcceuil />} />
                 </Routes>
             </ChoisirQteProvider>
             </AjouterAuPanierProvider>

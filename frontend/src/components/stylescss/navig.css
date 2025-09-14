@@ -19,7 +19,7 @@
     /* margin-bottom: 100px; */
     width:100dvw;
     /* max-width: max-content; */
-    position: fixed;
+    /* position: fixed; */
     z-index: 8px;
     top: 0px;
     padding:8px 10px;
@@ -117,10 +117,9 @@
     top: 3px;
     right: 20px;
     color: rgb(0, 0, 0);
-    font-size: 1em;
+    /* font-size: 1em; */
     /* visibility: hidden; */
 } 
-
 
 
 
