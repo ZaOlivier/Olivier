@@ -18,32 +18,46 @@ export const AdmVoir=()=>{
 
     })
     return(
-        <div style={{
-            display:"block",
-            width:"40vw"
-        }}>
-         
-            <p>voir tout les utilisateur</p>
-            <button onClick={Rolecontroler} style={{
+        <div style={{display:"block"}}>
+            {/* <section > */}
+                {/* <form style={{height:"10px", width:"8px"}}>
+                    <input type="serch" name="" id="" d/>
+                    <button>rechercher</button>
+                </form> */}
+         <button onClick={Rolecontroler} style={{
                 border:" 2px solid rgb(255, 218, 55)",
                 borderRadius:"3px",
-                background:"rgb(255, 218, 55)"
+                background:"rgb(255, 218, 55)",
+                margin:"10px"
             }}>voir les users</button>
-           <table style={{border:" 2px solid white"}}>
+            {/* </section> */}
+       
+        <div style={{
+            display:"block",
+            // width:"40vw",
+            maxHeight:"50vh",
+            width:"50.5vw",
+            overflow:"scroll",
+            // overflowX:"hidden"
+            }}>
+    
+           <table style={{border:" 2px solid white",}}>
             <thead style={{
                 border:" 2px solid red",
                 background:"rgb(255, 218, 55)"
             }}>
+                <tr>
                 <th>id</th>
                 <th>nom</th>
                 <th>numero</th>
                 <th>gmail</th>
                 <th>mot de pass</th>
                 <th>version</th>
+                </tr>
             </thead>
             <tbody style={{
                 background:"rgba(146, 145, 145, 1)",
-                color:"white"
+                color:"white",  
                 }}>
                 {admvoir.map((user, index)=>(
                 <tr key={index}>
@@ -63,5 +77,6 @@ export const AdmVoir=()=>{
            
             
         </div>
+         </div>
     )
 }

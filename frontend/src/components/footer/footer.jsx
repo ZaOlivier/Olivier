@@ -10,7 +10,7 @@ export const MyFooter=()=>{
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
             expedita in aspernatur incidunt quam, sed placeat nemo, 
             debitis veritatis ut consequuntur. Dolorem doloremque cumque 
-            provident enim nihil harum! <Link to='./AdmAcceuil'>Administ</Link> Reiciendis, facere.
+            provident enim nihil harum! <Link to='./AdmAcceuil' style={{textDecoration:"none", color:"white"}}>Administ</Link> Reiciendis, facere.
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
             {/* expedita in aspernatur incidunt quam, sed placeat nemo, 
             debitis veritatis ut consequuntur. Dolorem doloremque cumque provident 
