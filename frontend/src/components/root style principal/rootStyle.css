@@ -5,10 +5,11 @@
     --border-parent:2px, solid red;
     --border-enfant1:2px, solid green;
     --border-form: 1px solid rgb(167, 167, 167);
-    --back-adm:rgb(110, 114, 115);
+    --back-adm:rgb(1, 3, 3);
     --back1:rgb(255, 218, 55);
     --back-navbar: rgb(255, 255, 255);
     --back-footer: black;
+    --color-adm:rgb(247, 79, 79);
     --color-footer:white;
     --display-flex: flex;
     --display-block: block;

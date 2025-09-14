@@ -1,4 +1,11 @@
+.secadmacceuil{
+background-color: var(--back-adm);
+ height: 100dvh;
+}
+
 .admacceuil{
-    background-color: var(--back-adm);
-    height: 100dvh;
+    
+    display: flex;
+    /* margin: 10px; */
+    padding: 20px 20px 20px 6px;
 }

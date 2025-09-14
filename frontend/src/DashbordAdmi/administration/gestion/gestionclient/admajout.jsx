@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import '../../../styleadm/admclient.css'
+import '../../../styleadm/admajoutclt.css'
 
 
 export const AdmAjout=()=>{
@@ -27,7 +27,7 @@ export const AdmAjout=()=>{
     return(
         <div className="admclient">
         <p>voulez-vous ajoute un utilisateur?</p>
-        <form onSubmit={RoleAjout}>
+        <form onSubmit={RoleAjout} >
             <input type="text" 
                 value={nom}
                 placeholder="son nom"
