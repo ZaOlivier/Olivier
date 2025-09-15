@@ -23,5 +23,19 @@ router.post('/admclient', async(req, res)=>{
     }
 })
 
+// pour supprimer
+
+// router.delete('/admclient/:id', async(req, res)=>{
+//     try{ 
+//         const admclient=await 
+//     AdmUser.findByIdDelete(req.params.id)
+//     res.send(`${admclient}, utilisateur supprimer`)
+//     }catch(err){
+//         res.send("echoué")
+//     }
+// })
+
+
 module.exports=router;
+
 

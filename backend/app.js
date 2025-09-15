@@ -1,3 +1,12 @@
+// pour cacher mon uri (mes identifaint de connexion de ma db)
+const dotenv = require('dotenv');
+// on importe mongoose pour pouvoir se connecter et interragie avec mongo altas
+const mongoose = require('mongoose');
+const port=process.env.PORT;
+// pour cacher mon uri (mes identifaint de connexion de ma db)
+const uri = process.env.MONGO_URI;
+// pour eviter les histoire de cors
+const cors = require('cors');
 // le module express
 const express=require('express');
 // instance de notre serveur(application)
@@ -6,18 +15,17 @@ const app=express();
 const Users=require('./utilisateur/actionUtilis/route/user/userRoute');
 // importe la route des Utilisateur
 const Admclient=require('./administration/admGestion/gestionClients/etatAdmClient');
-// pour eviter les histoire de cors
-const cors = require('cors');
 
 
 
 // 
 app.use(cors());
-// on importe mongoose pour pouvoir se connecter et interragie avec mongo altas
-const mongoose = require('mongoose');
 
 // pour la connexion de mam db mongo
-mongoose.connect("mongodb+srv://zaouliolivier01:Tahdolce1@cluster0.wosgqqy.mongodb.net/commerce?retryWrites=true&w=majority")
+// pour cacher mon uri (mes identifaint de connexion de ma db)
+dotenv.config();
+mongoose.connect(process.env.MONGO_URI)
+// mongoose.connect("mongodb+srv://zaouliolivier01:MjOLyIm2tsziRPov1@clusterO.wosgqqy.mongodb.net/commerce?retryWrites=true&w=majority")
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 // })
