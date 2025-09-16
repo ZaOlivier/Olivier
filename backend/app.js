@@ -45,7 +45,7 @@ app.use('/api', Users)
 // 2- adm:admclient
 app.use('/administration', Admclient)
 // 2- adm:admproduit
-app.use('/administration', Admclient)
-
+app.use('/administration', AdmProduit)
+app.use('/donneProd', AdmProduit)
 // on export l'app
 module.exports=app;

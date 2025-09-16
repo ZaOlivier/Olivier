@@ -11,6 +11,14 @@ router.get('/admproduit', async(req, res)=>{
         res.send(Error)
     }
 })
+router.get('/affiche-client-produit', async(req, res)=>{
+    try{
+        const admproduit= await AdmProduit.find();
+        res.send(admproduit)
+    }catch(err){
+        res.send(Error)
+    }
+})
 // pour ajouter
 router.post('/admproduit', async(req, res)=>{
     try{

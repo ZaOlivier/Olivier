@@ -17,9 +17,11 @@ export const AdmAjoutproduit=()=>{
             axios.post('http://localhost:5000/administration/admproduit',{
                 nom,
                 prix,
-                image,
+                // image,
             })
-            setMessage(res.data);
+            setInterval(() => {
+                setMessage(res.data)
+            }, 200);
             
         //    console.log(res.data);
         }catch(err){
@@ -32,7 +34,9 @@ export const AdmAjoutproduit=()=>{
             marginBottom:"10px",
             padding:"10px",
             marginLeft:"180px",
-            color:"black"
+            // marginRight:"150px",
+            color:"black",
+            
         }}>voulez-vous ajoute un produit?</p>
         <h3 style={{
             // color:"white",

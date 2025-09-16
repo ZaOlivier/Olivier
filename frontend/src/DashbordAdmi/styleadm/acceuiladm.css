@@ -28,7 +28,7 @@ background-color: var(--back-adm);
 .pageEnVu{
     /* border: 2px solid blue; */
     margin-left: 240px;
-    width: 80%;
+    width:auto;
     position: fixed;
     /* height: 80vh; */
     background-color: white;

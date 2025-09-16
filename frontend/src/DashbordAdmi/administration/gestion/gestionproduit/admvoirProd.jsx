@@ -29,7 +29,9 @@ export const AdmVoirprod=()=>{
     //     }
     // })
     return(
-        <div style={{display:"block"}}>
+        <div style={{display:"block"
+
+        }}>
             {/* <section > */}
                 {/* <form style={{height:"10px", width:"8px"}}>
                     <input type="serch" name="" id="" d/>
@@ -39,7 +41,7 @@ export const AdmVoirprod=()=>{
                 border:" 2px solid rgb(255, 218, 55)",
                 borderRadius:"3px",
                 background:"rgb(255, 218, 55)",
-                margin:"10px"
+                // margin:"10px"
             }}>voir les users</button>
              {/* <section >
                     <form onSubmit={Rolesupprimer} style={{

@@ -59,7 +59,7 @@ export const AdmAcceuil=()=>{
                     <header style={{
                         height:"4vh",
                         background:"blue",
-                        padding:"0 40px",
+                        padding:"0 15px",
                         color:"white"
                     }}>Gestion</header>
                     <section style={{
