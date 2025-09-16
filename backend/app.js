@@ -15,6 +15,8 @@ const app=express();
 const Users=require('./utilisateur/actionUtilis/route/user/userRoute');
 // importe la route des Utilisateur
 const Admclient=require('./administration/admGestion/gestionClients/etatAdmClient');
+// route des produits
+const AdmProduit=require("./administration/admGestion/gestionProduits/etatAdmProduit")
 
 
 
@@ -41,6 +43,8 @@ app.use(express.json());
 // 1- utilis:user
 app.use('/api', Users)
 // 2- adm:admclient
+app.use('/administration', Admclient)
+// 2- adm:admproduit
 app.use('/administration', Admclient)
 
 // on export l'app

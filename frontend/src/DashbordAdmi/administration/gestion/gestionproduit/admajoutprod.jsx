@@ -3,22 +3,20 @@ import React, { useState } from "react";
 import '../../../styleadm/admajoutclt.css'
 
 
-export const AdmAjout=()=>{
+export const AdmAjoutproduit=()=>{
     const[nom, setNom]=useState('');
-    const[numero, setNumero]=useState('');
-    const[motDePass, setMotDePass]=useState('');
-    const[email, setEmail]=useState('');
+    const[prix, setPrix]=useState('');
+    const[image, setImage]=useState('');
     const[message, setMessage]=useState('');
    
-    const RoleAjout=(async(e)=>{
+    const RoleAjoutprod=(async(e)=>{
         e.preventDefault();
         try{
             const res= await
-            axios.post('http://localhost:5000/administration/admclient',{
+            axios.post('http://localhost:5000/administration/admproduit',{
                 nom,
-                numero,
-                email,
-                motDePass,
+                prix,
+                image,
             })
             setMessage(res.data);
             
@@ -34,7 +32,7 @@ export const AdmAjout=()=>{
             padding:"10px",
             marginLeft:"180px",
             color:"black"
-        }}>voulez-vous ajoute un utilisateur?</p>
+        }}>voulez-vous ajoute un produit?</p>
         <h3 style={{
             // color:"white",
             marginLeft:"200px",
@@ -43,33 +41,22 @@ export const AdmAjout=()=>{
             
         }}>{message} </h3>
     
-        <form onSubmit={RoleAjout} >
+        <form onSubmit={RoleAjoutprod} >
             <input type="text" 
                 value={nom}
-                placeholder="son nom"
+                placeholder="nom du produit"
                 onChange={(e) =>
                 setNom(e.target.value)}
             />
-            <input type="tel" 
-                value={numero}
-                placeholder="son numero"
+            <input type="number" 
+                value={prix}
+                placeholder="prix"
                 pattern="[0-9]{10}"
-                title="Entrez un numéro valide à 10 chiffres"
+                // title="Entrez un numéro valide à 10 chiffres"
                 onChange={(e) =>
-                setNumero(e.target.value)}
+                setPrix(e.target.value)}
             />
-            <input type="email" 
-                value={email}
-                placeholder="son gmail"
-                onChange={(e) =>
-                setEmail(e.target.value)}
-            />
-            <input type="passWord" 
-                value={motDePass}
-                placeholder="mot de passe"
-                onChange={(e) =>
-                setMotDePass(e.target.value)}
-            />
+           
             <br />
             <button type="submit">L'ajouter</button>
         </form>

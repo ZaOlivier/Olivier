@@ -1,6 +1,9 @@
 .admclient form{
     display: block;
+    /* border: 2px solid red; */
+    height: auto;
     /* margin: 10px 10px 10px 70px; */
+   
     
     
 }
@@ -12,9 +15,11 @@
     margin-bottom: 2px;
     height: 5vh;
     width: 20vw;
+    
 }
 .admclient button{
     width: 10vw;
     margin-left:200px;
     border-radius: 4px;
+    margin-bottom: 10px;
 }
