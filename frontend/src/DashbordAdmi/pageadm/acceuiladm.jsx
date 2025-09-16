@@ -55,11 +55,27 @@ export const AdmAcceuil=()=>{
                 background:"red"
             }}>
                 <nav className='admacceuil'>
-            
-                    <button onClick={()=>setPage('mes')}>admajout</button>
-                    <button onClick={()=>setPage('voir')}>admvoir</button>
-                    <button onClick={()=>setPage('es')}>admproduit</button>
-                    <button onClick={()=>setPage('est')}>admVoirproduit</button>
+
+                    <header style={{
+                        height:"4vh",
+                        background:"blue",
+                        padding:"0 40px",
+                        color:"white"
+                    }}>Gestion</header>
+                    <section style={{
+                        // height:"100vh",
+                        background:"red",
+                        color:"white"
+                    }}>Clients</section>
+                    <button onClick={()=>setPage('mes')}>Ajouter</button>
+                    <button onClick={()=>setPage('voir')}>Voir</button>
+                    <section style={{
+                        // height:"100vh",
+                        background:"red",
+                        color:"white"
+                    }}>Produits</section>
+                    <button onClick={()=>setPage('es')}>Ajouter</button>
+                    <button onClick={()=>setPage('est')}>Voir tout</button>
           
                 </nav>
             </section>

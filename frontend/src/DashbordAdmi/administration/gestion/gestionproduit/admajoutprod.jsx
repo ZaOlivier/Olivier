@@ -8,6 +8,7 @@ export const AdmAjoutproduit=()=>{
     const[prix, setPrix]=useState('');
     const[image, setImage]=useState('');
     const[message, setMessage]=useState('');
+     const[des, setDEs]=useState('');
    
     const RoleAjoutprod=(async(e)=>{
         e.preventDefault();
@@ -55,6 +56,12 @@ export const AdmAjoutproduit=()=>{
                 // title="Entrez un numéro valide à 10 chiffres"
                 onChange={(e) =>
                 setPrix(e.target.value)}
+            />
+             <input type="text" 
+                value={des}
+                placeholder="descriptions"
+                onChange={(e) =>
+                setDEs(e.target.value)}
             />
            
             <br />
