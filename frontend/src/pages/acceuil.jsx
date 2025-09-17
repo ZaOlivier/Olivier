@@ -30,7 +30,7 @@ const Acceuil=()=>{
             <main  className="">
 
             <Articles6 />
-            {/* <Articles6A /> */}
+            <Articles6A />
             {/* <Articles6 /> */}
             </main>
             <MyFooter />

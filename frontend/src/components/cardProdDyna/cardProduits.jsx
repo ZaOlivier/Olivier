@@ -20,7 +20,7 @@ const CardProduits=({produits})=>{
                 <div className='vie'>
                 {/* <div className="monProd"> */}
                     <h3>
-                        {produits.nom}
+                        {produits.id}
                     </h3>
                     <p>
                         {produits.prix} FCFA

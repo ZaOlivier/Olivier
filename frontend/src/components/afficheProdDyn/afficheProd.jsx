@@ -43,21 +43,21 @@ export function AfficheNouv() {
     
 }
 
-// export const AffichePromo=()=>{
+export const AffichePromo=()=>{
 
-//       return(
-//         <>
-//             {ListePromo.map((prod)=>(
+      return(
+        <>
+            {ListeNouv.map((prod)=>(
 
-//                 <CardProduits key= {prod.id}
-//                     produits= {prod}
+                <CardProduits key= {prod.id}
+                    produits= {prod}
                 
-//                 />
-//            ))}
-//         </>
+                />
+           ))}
+        </>
         
-//     );
+    );
 
-// }
+}
 
 

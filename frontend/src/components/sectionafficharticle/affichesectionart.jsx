@@ -21,19 +21,19 @@ export const Articles6=()=>{
     )
 }
 
-// export const Articles6A=()=>{
-//     return(
-//         <>
-//             <section className="nosProd9">
-//                 <div className="titre">
-//                     <h3>Nouveauté chez Maman</h3>
+export const Articles6A=()=>{
+    return(
+        <>
+            <section className="nosProd9">
+                <div className="titre">
+                    <h3>Nouveauté chez Maman</h3>
         
-//                 </div>
-//                 <div className="cardProd9">
-//                     <AffichePromo />
-//                 </div>   
-//             </section>
+                </div>
+                <div className="cardProd9">
+                    <AffichePromo />
+                </div>   
+            </section>
         
-//         </>
-//     )
-// }
+        </>
+    )
+}

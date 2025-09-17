@@ -12,16 +12,16 @@ import a from'../../aasets/im/a.gif';
 import d from '../../aasets/im/d.gif';
 
 export const ListeNouv=[
-    {id: 'id1', nom: 'sac', prix: 5000, image: a, quantite: 1, 
+    {_id: 'id1', nom: 'sac', prix: 5000, image: a, quantite: 1, 
      compl:'Loremipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vero.',
      magasin:'Situé à yopougon'},
-    {id: 'id2', nom: 'tecno', prix: 9000, image: b, 
+    {_id: 'id2', nom: 'tecno', prix: 9000, image: b, 
     compl:'Loremipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vero.',
     magasin:'Situé à yopougon'},
-    {id: 'id3', nom: 'sac femme', prix: 4000, image: d,
+    {_id: 'id3', nom: 'sac femme', prix: 4000, image: d,
     compl:'Loremipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vero.',
     magasin:'Situé à yopougon'},
-    {id: 'id4', nom: 'écouteur', prix: 3500, image: a,
+    {_id: 'id4', nom: 'écouteur', prix: 3500, image: a,
     compl:'Loremipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vero.',
     magasin:'Situé à yopougon'},
     // {id: 'id5', nom: 'ps5', prix: 130500, image: chaussure2, 

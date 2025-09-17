@@ -11,7 +11,7 @@ import { ResumerPanier } from "../components/complement affiche panier/ResumerPa
 // import { AffichePromo } from "../components/afficheProdDyn/afficheProd";
 import { QteContext } from "../context/listeproduitsContext";
 import { PanierContext } from "../context/panierContext";
-
+import c from '../aasets/im/c.gif'
 
 
 
@@ -27,6 +27,18 @@ const AffichPanier=()=> {
  
     return(
         <>
+           <div className="bani" style={{
+                                width:"100dvw",
+                                height:"8dvh",
+                                // border:"var(--border-enfant1)",
+                                objectFit:"cover"
+                            }}>
+                            <img src={c} alt="" style={{
+                                width:"100%",
+                                height:"100%",
+                                // objectFit:"cover"
+                            }}/>
+                            </div>
             {/* <div className="headerPanier"> */}
                 <Navig />
             {/* </div> */}
@@ -96,7 +108,7 @@ const AffichPanier=()=> {
                                         {/* <p>quantite: {details.quantite} </p> */}
                                         {/* <p>Quantite : {qte} </p> */}
                                         <h5>sous-totals: {details.quantite * details.prix}</h5> 
-                                        <button onClick={()=>SuppPanier(details.id)}>Supprimer</button>
+                                        <button onClick={()=>SuppPanier(details._id)}>Supprimer</button>
                                         {/* <li><p>TVA 18% : {details.quantite * details.prix * Tva} </p></li> */}
                             
                                     </div>

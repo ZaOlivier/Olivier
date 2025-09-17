@@ -10,13 +10,15 @@ import AjouterAuPanierProvider from './components/ajoutPanier/ajouteraupanierPro
 import ChoisirQteProvider from './components/choixquantite/qtechoix';
 import './components/root style principal/rootStyle.css'
 import {AdmAcceuil} from './DashbordAdmi/pageadm/acceuiladm'
+import {ValiderCd, ValiderCdProvider } from './components/validercdProvider/validercdProvider';
 
 
 function App(){
     return(
-       
+        
             <AjouterAuPanierProvider>
              <ChoisirQteProvider>
+                <ValiderCdProvider>
                 <Routes>
                     <Route path="/" element={<Acceuil />} />
                     <Route path='/Services' element={<Services />} />
@@ -25,6 +27,7 @@ function App(){
                     <Route path='/Commande' element={<Commande />} />
                     <Route path='/AdmAcceuil' element={<AdmAcceuil />} />
                 </Routes>
+                </ValiderCdProvider>
             </ChoisirQteProvider>
             </AjouterAuPanierProvider>
        

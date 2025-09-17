@@ -76,6 +76,43 @@ export const AdmAcceuil=()=>{
                     }}>Produits</section>
                     <button onClick={()=>setPage('es')}>Ajouter</button>
                     <button onClick={()=>setPage('est')}>Voir tout</button>
+                    <button onClick={()=>setPage('est')}>produits/fsses</button>
+                     <section style={{
+                        // height:"100vh",
+                        background:"red",
+                        color:"white"
+                    }}>Commandes</section>
+                    <button onClick={()=>setPage('es')} style={{
+                        // height:"100vh",
+                        background:"green",
+                        color:"white"
+                    }}>tout les commande</button>
+                    <button onClick={()=>setPage('est')} style={{
+                        // height:"100vh",
+                        background:"green",
+                        color:"white"
+                    }}>commades par util</button>
+                    <button onClick={()=>setPage('est')} style={{
+                        // height:"100vh",
+                        background:"green",
+                        color:"white"
+                    }}>detail prod/cd</button>
+                    <button onClick={()=>setPage('est')} style={{
+                        // height:"100vh",
+                        background:"green",
+                        color:"white"
+                    }}>fsses prod/cd</button>
+                    <section style={{
+                        // height:"100vh",
+                        background:"red",
+                        color:"white"
+                    }}>Fournisseurs</section>
+                    <button onClick={()=>setPage('es')} style={{
+                        // height:"100vh",
+                        // background:"green",
+                        // color:"white"
+                    }}>Listes des fsses</button>
+                    
           
                 </nav>
             </section>

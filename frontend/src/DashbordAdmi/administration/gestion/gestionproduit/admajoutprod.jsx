@@ -53,7 +53,7 @@ export const AdmAjoutproduit=()=>{
                 onChange={(e) =>
                 setNom(e.target.value)}
             />
-            <input type="number" 
+            <input type="tel" 
                 value={prix}
                 placeholder="prix"
                 pattern="[0-9]{10}"
