@@ -5,6 +5,7 @@ import { FormulaireCommd } from "./FormCommand";
 import { Connexion } from "../connexion&insci/connexion";
 import { Inscription } from "../connexion&insci/inscription";
 import { RevuCd } from "./revuCd";
+import { MethodePaien } from "../methodePaien/methodePaien";
 
 export const EtapeCd=()=>{
    const[etape, setEtape]=useState(1)
@@ -20,7 +21,7 @@ export const EtapeCd=()=>{
                 
                 break;
             case 2:
-                return('Bientot disponible')                
+                return<MethodePaien/>               
                 break;
         
             case 3:
