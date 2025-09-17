@@ -6,6 +6,7 @@ import '../styleadm/acceuiladm.css'
 import { MessBienvAdm } from '../componentsadm/bienvadm'
 import { AdmAjoutproduit } from '../administration/gestion/gestionproduit/admajoutprod'
 import { AdmVoirprod } from '../administration/gestion/gestionproduit/admvoirProd'
+import { AdmVoirCd } from '../administration/gestion/gestioncommande/admvoirCd'
 
 export const AdmAcceuil=()=>{
     const[page, setPage]=useState('home')
@@ -23,6 +24,8 @@ export const AdmAcceuil=()=>{
             return<AdmAjoutproduit/>
         case 'est':
             return<AdmVoirprod/>
+        case 'admvoir':
+            return<AdmVoirCd/>
         default:
             return<MessBienvAdm/>
             break;
@@ -82,12 +85,14 @@ export const AdmAcceuil=()=>{
                         background:"red",
                         color:"white"
                     }}>Commandes</section>
-                    <button onClick={()=>setPage('es')} style={{
+                    <button onClick={()=>setPage('admvoir')} style={{
                         // height:"100vh",
                         background:"green",
-                        color:"white"
+                        color:"white",
+                        
+                        
                     }}>tout les commande</button>
-                    <button onClick={()=>setPage('est')} style={{
+                    {/* <button onClick={()=>setPage('est')} style={{
                         // height:"100vh",
                         background:"green",
                         color:"white"
@@ -111,13 +116,13 @@ export const AdmAcceuil=()=>{
                         // height:"100vh",
                         // background:"green",
                         // color:"white"
-                    }}>Listes des fsses</button>
+                    }}>Listes des fsses</button> */}
                     
           
                 </nav>
             </section>
             <section className='pageEnVu'>
-                
+                {/* {console.log(setPage)} */}
                 <Pagemono/>
             </section>
             </div>

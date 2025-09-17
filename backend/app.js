@@ -17,6 +17,8 @@ const Users=require('./utilisateur/actionUtilis/route/user/userRoute');
 const Admclient=require('./administration/admGestion/gestionClients/etatAdmClient');
 // route des produits
 const AdmProduit=require("./administration/admGestion/gestionProduits/etatAdmProduit")
+// 
+const CdDesUtilis=require("./utilisateur/actionUtilis/route/commande/commandeRoute")
 
 
 
@@ -42,10 +44,16 @@ app.use(express.json());
 // les route ou encore les API qui vont nous permettre de faire des requetes via frontend
 // 1- utilis:user
 app.use('/api', Users)
+// 
+app.use('/cd', CdDesUtilis)
 // 2- adm:admclient
 app.use('/administration', Admclient)
 // 2- adm:admproduit
 app.use('/administration', AdmProduit)
 app.use('/donneProd', AdmProduit)
+// 
+app.use('/Administration', CdDesUtilis)
+
+// 
 // on export l'app
 module.exports=app;
